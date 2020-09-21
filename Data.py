@@ -6,6 +6,9 @@ Created on Sun Aug 30 00:28:37 2020
 """
 
 
+%reset -f
+%clear
+
 import pandas as pd
 
 #id from api
@@ -42,6 +45,6 @@ gsw_team_log = leaguegamefinder.LeagueGameFinder(team_id_nullable = gsw_id).get_
 
 #player career stats
 from nba_api.stats.endpoints import playercareerstats
-playercareerstats_dict = playercareerstats.PlayerCareerStats()
+# playercareerstats_dict = playercareerstats.PlayerCareerStats()
 
-bron_careerstats = [player for player in playercareerstats_dict if player]
+# bron_careerstats = [player for player in playercareerstats_dict if player['id'] == bron_id][0]
