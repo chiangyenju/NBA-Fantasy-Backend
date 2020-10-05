@@ -34,7 +34,7 @@ for player in player_active_list:
     player_game_log = playergamelog.PlayerGameLog(player_id, season = SeasonAll.all)
     player_game_log_df = player_game_log.get_data_frames()[0]
     all_player_game_log_df = all_player_game_log_df.append(player_game_log_df)
-    time.sleep(.200)
+    time.sleep(.300)
     
 
 
@@ -45,10 +45,17 @@ player_active_list_df = player_active_list_df.rename(columns={"id":"Player_ID"})
 
 
 # collect useful columns
-useful_columns = ['Player_ID','MIN','FGM','FGA','FG3M','FG3A','FTM','FTA','OREB','DREB','AST','STL','BLK','TOV','PTS']   
-fantasy_df = all_player_game_log_df[useful_columns]
-fantasy_df = pd.merge(fantasy_df, player_active_list_df, on = 'Player_ID', how = 'left')
+def form_fantasy_df():
+    useful_columns = ['Player_ID','GAME_DATE','MATCHUP','MIN', \
+                      'FGM','FGA','FG3M','FG3A','FTM','FTA','OREB','DREB','AST','STL','BLK','TOV','PTS']   
+    fantasy_df = all_player_game_log_df[useful_columns]
+    fantasy_df = pd.merge(fantasy_df, player_active_list_df, on = 'Player_ID', how = 'left')
+    columns_order = ['Player_ID','full_name','GAME_DATE','MATCHUP','MIN', \
+                      'FGM','FGA','FG3M','FG3A','FTM','FTA','OREB','DREB','AST','STL','BLK','TOV','PTS']
+    fantasy_df = fantasy_df.reindex(columns=columns_order)
+    return fantasy_df
 
+fantasy_df = form_fantasy_df()
 
 
 # detect which stats exceed 10, then create DD column
@@ -88,29 +95,30 @@ fantasy_df['TD'] = fantasy_df.apply(triple_double,axis = 1)
 
 
 
-# check if adding td works properly
-def detect_first_td():
-    res = next(x for x, val in enumerate(fantasy_df["TD"]) if val ==1)
-    print(res)
+### check if adding td works properly
+# def detect_first_td():
+#     res = next(x for x, val in enumerate(fantasy_df["TD"]) if val ==1)
+#     print(res)
     
-    # check how many tds    
-    td_check = [td for td in fantasy_df['TD'] if (td == 1)]
-    td_count = len(td_check)
-    print(td_count)
+#     # check how many tds    
+#     td_check = [td for td in fantasy_df['TD'] if (td == 1)]
+#     td_count = len(td_check)
+#     print(td_count)
 
 
 
 
-# add name to df, need to delete past data first
-try:
-    del fantasy_df['full_name']
-except Exception:
-    pass
+### add name to df, need to delete past data first
+# try:
+#     del fantasy_df['full_name']
+# except Exception:
+#     pass
 
 
-fpoints_df = fantasy_df
 
-def fantasy_points():
+
+def fantasy_points(fantasy_df):
+    
     
     # calculate fantasy point
     fpoints_fgm = 3
@@ -129,28 +137,31 @@ def fantasy_points():
     fpoints_dd = 10
     fpoints_td = 10
     # try:
-    #     del fpoints_df
+    #     del fantasy_df
     # except Exception:
     #     pass
 
-    fpoints_df['FGM'] *= fpoints_fgm
-    fpoints_df['FGA'] *= fpoints_fga
-    fpoints_df['FG3M'] *= fpoints_fg3m
-    fpoints_df['FG3A'] *= fpoints_fg3a
-    fpoints_df['FTM'] *= fpoints_ftm
-    fpoints_df['FTA'] *= fpoints_fta
-    fpoints_df['OREB'] *= fpoints_oreb
-    fpoints_df['DREB'] *= fpoints_dreb
-    fpoints_df['AST'] *= fpoints_ast
-    fpoints_df['STL'] *= fpoints_stl
-    fpoints_df['BLK'] *= fpoints_blk
-    fpoints_df['TOV'] *= fpoints_tov
-    fpoints_df['PTS'] *= fpoints_pts
-    fpoints_df['DD'] *= fpoints_dd
-    fpoints_df['TD'] *= fpoints_td
+    fantasy_df['FGM'] *= fpoints_fgm
+    fantasy_df['FGA'] *= fpoints_fga
+    fantasy_df['FG3M'] *= fpoints_fg3m
+    fantasy_df['FG3A'] *= fpoints_fg3a
+    fantasy_df['FTM'] *= fpoints_ftm
+    fantasy_df['FTA'] *= fpoints_fta
+    fantasy_df['OREB'] *= fpoints_oreb
+    fantasy_df['DREB'] *= fpoints_dreb
+    fantasy_df['AST'] *= fpoints_ast
+    fantasy_df['STL'] *= fpoints_stl
+    fantasy_df['BLK'] *= fpoints_blk
+    fantasy_df['TOV'] *= fpoints_tov
+    fantasy_df['PTS'] *= fpoints_pts
+    fantasy_df['DD'] *= fpoints_dd
+    fantasy_df['TD'] *= fpoints_td
 
 
-fantasy_points()
+    fp = fantasy_df.loc[['FGM','FGA','FG3M','FG3A','FTM','FTA','OREB','DREB','AST','STL','BLK','TOV','PTS','DD','TD']].sum()
+    
+    return fp
 
+fantasy_df['FP'] = fantasy_df.apply(fantasy_points,axis = 1)
 
-
+fantasy_df.to_pickle("./fantasy_df.pkl")

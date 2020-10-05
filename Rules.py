@@ -49,4 +49,8 @@ This is a temporary script file.
     2. 1 player data for career game by game
     3. dataframe game by game with each player'''
     
-    
+'''Further Plans :
+    1. List Player Price from last season
+    2. Provide possible stats and price next season
+    3. Create Player Insert Box when typing player name from github website automatically generates chart
+    4. Mark Injury Times'''    
