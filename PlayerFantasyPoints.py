@@ -38,9 +38,11 @@ fp = df[['Player_ID', 'full_name', 'month', 'MIN', 'FGM', 'FGA', 'FG3M', 'FG3A',
 #filter recent 3 years
 fp = fp[fp['month'] != 0]
 
+#rename and lower case columns
 fp = fp.rename(columns = {'Player_ID': 'id', 'full_name': 'name'})
 fp.columns = fp.columns.str.lower()
 
+#change data type to float / int
 fp['min'] = pd.to_numeric(fp['min'], errors = 'coerce')
 fp['fgm'] = pd.to_numeric(fp['fgm'], errors = 'coerce')
 fp['fga'] = pd.to_numeric(fp['fga'], errors = 'coerce')
@@ -58,20 +60,21 @@ fp['pts'] = pd.to_numeric(fp['pts'], errors = 'coerce')
 fp['dd'] = pd.to_numeric(fp['dd'], errors = 'coerce')
 fp['td'] = pd.to_numeric(fp['td'], errors = 'coerce')
 fp['fp'] = pd.to_numeric(fp['fp'], errors = 'coerce')
+fp['games'] = 1
 
+#get column for pivot table
 stat_column = ['min', 'fgm', 'fga', 'fg3m', 'fg3a', 'ftm', 'fta', 'oreb', 'dreb', 'ast', 'stl', 'blk', 'tov', 'pts', 'dd', 'td', 'fp']
 
 
 print(fp.dtypes)
-# aaa = fp.groupby(['id', 'name', 'month'], as_index = False).mean()
 
-avg_pivot = pd.pivot_table(fp, index = ['id', 'name', 'month'],
-                       values = stat_column,
-                       aggfunc = np.mean).sort_values('id', ascending = True)
+#get each month average stats
+avg_pivot = pd.pivot_table(fp, index = ['id', 'name', 'month'], values = stat_column, aggfunc = np.mean).sort_values('id', ascending = True)
 
+#sort pivot order
 avg_pivot = avg_pivot.reindex(stat_column, axis=1)
 
-fp.month.value_counts()
-
+#add total games played that month
+avg_pivot['games'] = pd.pivot_table(fp, index = ['id', 'name', 'month'], values = 'games', aggfunc = np.sum).sort_values('id', ascending = True)
 
 avg_pivot.to_csv('fp_3y.csv')
