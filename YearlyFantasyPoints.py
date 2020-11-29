@@ -41,30 +41,17 @@ season_index = [['2010-2011',dt.datetime(2010,10,26),dt.datetime(2011,4,13)],
       
 season_df = pd.DataFrame(season_index, columns = ['Season', 'Start', 'End'])
           
-game_date = df['GAME_DATE'].apply(lambda x: dt.datetime.strptime(x, "%b %d, %Y"))
+df['game_date'] = df['GAME_DATE'].apply(lambda x: dt.datetime.strptime(x, "%b %d, %Y"))
     # dt.datetime.strptime(game_date, "%b %d, %Y")
 
                 
 def which_season(df):   
-    for element in game_date:
-    
-        for i in range(0,len(season_index)):
-            if i == 10:
-                i = 0
-            elif element >= season_index[i][1] and element <= season_index[i][2]:
-                season = season_index[i][0]
-                return season
+    for element in df['game_date']:
+        for i in range(0, len(season_index)):
+            if element >= season_index[i][1] and element <= season_index[i][2]:
+                df['season'] = season_index[i][0]
+                break
             else:
                 i += 1
-
 df['season'] = df.apply(which_season, axis = 1)
 
-
-
-for element in game_date:
-        if i == len(season_index):
-            i = 0
-        elif element >= season_index[i][1] and element <= season_index[i][2]:
-            df['season'] = season_index[i][0] 
-        else:
-            i += 1
