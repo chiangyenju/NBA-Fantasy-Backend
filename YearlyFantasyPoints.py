@@ -41,12 +41,12 @@ season_index = [['2010-2011',dt.datetime(2010,10,26),dt.datetime(2011,4,13)],
                 # add new year index
       
 #season index to dataframe      
-season_df = pd.DataFrame(season_index, columns = ['Season', 'Start', 'End'])
+# season_df = pd.DataFrame(season_index, columns = ['Season', 'Start', 'End'])
           
 df['game_date'] = df['GAME_DATE'].apply(lambda x: dt.datetime.strptime(x, "%b %d, %Y"))
     # dt.datetime.strptime(game_date, "%b %d, %Y")
 
-#add season to each game
+#add season to each game 
 def which_season(df):   
     element = df['game_date']
     for i in range(0, len(season_index)):
@@ -56,3 +56,9 @@ def which_season(df):
             i += 1
             
 df['season'] = df.apply(which_season, axis = 1)
+
+df = df.rename(columns = {'Player_ID': 'id', 'full_name': 'name'})
+df.columns = df.columns.str.lower()
+
+
+season_fp = pd.pivot_table(df, index = ['name', 'season'], values = 'fp', aggfunc = np.sum).sort_values('name', ascending = True)
