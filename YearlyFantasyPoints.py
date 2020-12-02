@@ -62,3 +62,5 @@ df.columns = df.columns.str.lower()
 
 
 season_fp = pd.pivot_table(df, index = ['name', 'season'], values = 'fp', aggfunc = np.sum).sort_values('name', ascending = True)
+
+season_fp.to_csv('season_fp.csv')
