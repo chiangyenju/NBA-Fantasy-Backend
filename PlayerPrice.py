@@ -24,6 +24,10 @@ merge = df.merge(yearly_fp, how='left', on=['name', 'season'])
 
 merge['fppd'] = merge.fp/merge.Price
 
+merge.to_csv('merge.csv', index = False)
+
+
+
 # df_fp_columns = ['Player','Price']
 # player1_fpoints = df.loc[df['Player'] == yearly_fp['name']][df_fp_columns]
 # player1_fpoints.columns = ['date','fp']
