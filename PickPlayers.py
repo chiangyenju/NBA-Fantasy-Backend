@@ -36,6 +36,8 @@ draftc = 12
 
 team = merge.sample(draftc)
 
+for i in range(10):
+    team[i] 
 while (team['Price'].sum() >= budget) | (team['fp'].sum() <= winp):
     team = merge.sample(draftc)
 
@@ -43,6 +45,6 @@ team
 team.fp.sum()
 team.Price.sum()
 
-#         print(team)
-    
-    # df['<= 2'] = df.apply(lambda x: len(np.where(x.values <= 2)[0]), axis=1)
+i
+
+
