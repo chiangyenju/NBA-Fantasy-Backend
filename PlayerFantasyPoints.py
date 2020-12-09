@@ -77,4 +77,4 @@ avg_pivot = avg_pivot.reindex(stat_column, axis=1)
 #add total games played that month
 avg_pivot['games'] = pd.pivot_table(fp, index = ['id', 'name', 'month'], values = 'games', aggfunc = np.sum).sort_values('id', ascending = True)
 
-avg_pivot.to_csv('fp_3y.csv')
+avg_pivot.to_csv('fp_3y_monthly.csv')
