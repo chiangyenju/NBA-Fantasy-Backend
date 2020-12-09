@@ -36,8 +36,7 @@ draftc = 12
 
 team = merge.sample(draftc)
 
-for i in range(10):
-    team[i] 
+ 
 while (team['Price'].sum() >= budget) | (team['fp'].sum() <= winp):
     team = merge.sample(draftc)
 
@@ -45,6 +44,6 @@ team
 team.fp.sum()
 team.Price.sum()
 
-i
+
 
 
