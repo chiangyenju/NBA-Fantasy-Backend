@@ -27,6 +27,9 @@ df = pd.read_pickle('fantasy_df.pkl')
 #add game month
 df['month'] = pd.to_datetime(df['GAME_DATE']).apply(lambda x: x.strftime('%Y/%m'))
 
+#add games played
+df['games'] = 1
+
 #season index
 season_index = [['2010-2011',dt.datetime(2010,10,26),dt.datetime(2011,4,13)],
                 ['2011-2012',dt.datetime(2011,12,25),dt.datetime(2012,6,26)],
@@ -58,11 +61,15 @@ def which_season(df):
 df['season'] = df.apply(which_season, axis = 1)
 
 # rename collumns
-df = df.rename(columns = {'Player_ID': 'id', 'full_name': 'name'})
-df.columns = df.columns.str.lower()
+df = df.rename(columns = {'Player_ID': 'id', 'full_name': 'name', 'FP':'fp'})
 
-#sum fantasy points by season
-season_fp = pd.pivot_table(df, index = ['name', 'season'], values = 'fp', aggfunc = np.sum).sort_values('name', ascending = True)
+#sum fantasy points and games played by season
+season_fp = pd.pivot_table(df, index = ['name', 'season'], values = ['fp', 'games'], aggfunc = np.sum).sort_values('name', ascending = True)
+
+
+#per game fp
+season_fp['pergfp'] = season_fp.fp / season_fp.games
+season_fp['pergfp'] = season_fp['pergfp'].round(1)
 
 #import auction player price
 price_csv = pd.read_csv('price_2019.csv')
@@ -73,6 +80,5 @@ price_csv['season'] = current_season
 price_csv = price_csv.rename(columns = {'Player': 'name', 'Price': 'price'})
 
 season_fp = season_fp.merge(price_csv, how='left', on=['name', 'season'])
-
 
 season_fp.to_csv('season_fp.csv', index = False)
