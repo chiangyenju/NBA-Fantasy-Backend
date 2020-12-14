@@ -12,7 +12,7 @@ import pandas as pd
 import numpy as np
 import datetime as dt
 
-df = pd.read_csv('price_2019.csv')
+df = pd.read_csv('draft_2019_2020.csv')
 yearly_fp = pd.read_csv('season_fp.csv')
 
 current_season = '2019-2020'
