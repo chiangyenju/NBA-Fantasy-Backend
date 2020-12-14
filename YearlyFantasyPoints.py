@@ -72,7 +72,7 @@ season_fp['pergfp'] = season_fp.fp / season_fp.games
 season_fp['pergfp'] = season_fp['pergfp'].round(1)
 
 #import auction player price
-price_csv = pd.read_csv('price_2019.csv')
+price_csv = pd.read_csv('draft_2019_2020.csv')
 
 #merge vlookup price with season fp
 current_season = '2019-2020'
