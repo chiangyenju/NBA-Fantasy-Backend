@@ -81,4 +81,8 @@ price_csv = price_csv.rename(columns = {'Player': 'name', 'Price': 'price'})
 
 season_fp = season_fp.merge(price_csv, how='left', on=['name', 'season'])
 
+#fantasy points per dollar
+season_fp['fppd'] = season_fp.fp / season_fp.price
+season_fp['fppd'] = season_fp['fppd'].round(1)
+
 season_fp.to_csv('season_fp.csv', index = False)
