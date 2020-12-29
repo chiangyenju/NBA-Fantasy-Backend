@@ -47,7 +47,6 @@ season_index = [['2010-2011',dt.datetime(2010,10,26),dt.datetime(2011,4,13)],
 # season_df = pd.DataFrame(season_index, columns = ['Season', 'Start', 'End'])
           
 df['game_date'] = df['GAME_DATE'].apply(lambda x: dt.datetime.strptime(x, "%b %d, %Y"))
-    # dt.datetime.strptime(game_date, "%b %d, %Y")
 
 #add season to each game 
 def which_season(df):   
@@ -81,4 +80,10 @@ price_csv = price_csv.rename(columns = {'Player': 'name', 'Price': 'price'})
 
 season_fp = season_fp.merge(price_csv, how='left', on=['name', 'season'])
 
+#fantasy points per dollar
+season_fp['fppd'] = season_fp.fp / season_fp.price
+season_fp['fppd'] = season_fp['fppd'].round(1)
+
 season_fp.to_csv('season_fp.csv', index = False)
+
+df.to_csv('fantasy_raw.csv', index = False)

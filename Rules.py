@@ -54,3 +54,8 @@ This is a temporary script file.
     2. Provide possible stats and price next season
     3. Create Player Insert Box when typing player name from github website automatically generates chart
     4. Mark Injury Times'''    
+    
+'''2020/12/26:
+    1. Monthly stats upper or lower season average image
+    2. versus which team average stats'''
+    
