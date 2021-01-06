@@ -85,5 +85,10 @@ fp['games'] = 1
 
 #get column for pivot table
 stat_column = ['min', 'fgm', 'fga', 'fg3m', 'fg3a', 'ftm', 'fta', 'oreb', 'dreb', 'ast', 'stl', 'blk', 'tov', 'pts', 'dd', 'td', 'fp']
-yearly_avg = pd.pivot_table(fp, index = ['id', 'name', 'month'], values = stat_column, aggfunc = np.mean).sort_values('id', ascending = True)
+monthly_avg = pd.pivot_table(fp, index = ['id', 'name', 'month', 'season'], values = stat_column, aggfunc = np.mean).sort_values('id', ascending = True)
+monthly_avg = monthly_avg[stat_column]
+
+#season average
+season_avg = pd.pivot_table(fp, index = ['id', 'name', 'season'], values = stat_column, aggfunc = np.mean).sort_values('id', ascending = True)
+season_avg = season_avg[stat_column]
 
