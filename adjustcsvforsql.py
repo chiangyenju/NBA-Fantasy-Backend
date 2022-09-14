@@ -31,9 +31,9 @@ season_fp = pd.read_csv('season_fp.csv')
 season_fp = season_fp.rename(columns = {'fp': 'points', 'pergfp': 'average'})
 
 #set recent 3 years
-season_3y = ['2020-2021',
-             '2019-2020',
-             '2018-2019']
+season_3y = ['2021-2022',
+             '2020-2021',
+             '2019-2020']
 
 #filter recent 3 years
 season_fp = season_fp[(season_fp['season'] == season_3y[0]) | (season_fp['season'] == season_3y[1]) | (season_fp['season'] == season_3y[2])]

@@ -1,169 +1,182 @@
-Player,Price,,,,
-Anthony Davis,183,,"Anthony Davis?(LAL - PF,C)",183,Anthony Davis?
-James Harden,173,,"James Harden?(Bkn - PG,SG)",173,James Harden?
-Luka Doncic,201,,"Luka Doncic?(Dal - PG,SG)",201,Luka Doncic?
-Trae Young,160,,Trae Young?(Atl - PG),160,Trae Young?
-LeBron James,175,,"LeBron James?(LAL - PG,SG,SF)",175,LeBron James?
-Damian Lillard,168,,Damian Lillard?(Por - PG),168,Damian Lillard?
-Giannis Antetokounmpo,211,,"Giannis Antetokounmpo?(Mil - PF,C)",211,Giannis Antetokounmpo?
-Karl-Anthony Towns,197,,Karl-Anthony Towns?(Min - C),197,Karl-Anthony Towns?
-Bam Adebayo,146,,"Bam Adebayo?(Mia - PF,C)",146,Bam Adebayo?
-Ricky Rubio,50,,Ricky Rubio?(Min - PG),50,Ricky Rubio?
-Collin Sexton,30,,"Collin Sexton?(Cle - PG,SG)",30,Collin Sexton?
-Stephen Curry,180,,"Stephen Curry?(GS - PG,SG)",180,Stephen Curry?
-Jaren Jackson Jr.,20,,"Jaren Jackson Jr.?(Mem - PF,C)",20,Jaren Jackson Jr.?
-Jimmy Butler,96,,"Jimmy Butler?(Mia - SF,PF)",96,Jimmy Butler?
-Jayson Tatum,162,,"Jayson Tatum?(Bos - SF,PF)",162,Jayson Tatum?
-D'Angelo Russell,68,,"D'Angelo Russell?(Min - PG,SG)",68,D'Angelo Russell?
-Kevin Durant,150,,"Kevin Durant?(Bkn - SF,PF)",150,Kevin Durant?
-Nikola Jokic,201,,"Nikola Jokic?(Den - PF,C)",201,Nikola Jokic?
-Kawhi Leonard,132,,"Kawhi Leonard?(LAC - SG,SF)",132,Kawhi Leonard?
-Nikola Vucevic,136,,Nikola Vucevic?(Orl - C),136,Nikola Vucevic?
-Russell Westbrook,164,,Russell Westbrook?(Was - PG),164,Russell Westbrook?
-Devin Booker,139,,"Devin Booker?(Pho - SG,SF)",139,Devin Booker?
-Brandon Ingram,75,,"Brandon Ingram?(NO - SF,PF)",75,Brandon Ingram?
-Ja Morant,74,,Ja Morant?(Mem - PG),74,Ja Morant?
-John Collins,119,,"John Collins?(Atl - PF,C)",119,John Collins?
-Zach LaVine,74,,"Zach LaVine?(Chi - SG,SF)",74,Zach LaVine?
-Draymond Green,24,,"Draymond Green?(GS - PF,C)",24,Draymond Green?
-Bradley Beal,90,,"Bradley Beal?(Was - SG,SF)",90,Bradley Beal?
-Rudy Gobert,102,,Rudy Gobert?(Uta - C),102,Rudy Gobert?
-Ben Simmons,121,,Ben Simmons?(Phi - PG),121,Ben Simmons?
-Jamal Murray,69,,"Jamal Murray?(Den - PG,SG)",69,Jamal Murray?
-Kyrie Irving,120,,Kyrie Irving?(Bkn - PG),120,Kyrie Irving?
-Donovan Mitchell,91,,"Donovan Mitchell?(Uta - PG,SG)",91,Donovan Mitchell?
-Jrue Holiday,82,,"Jrue Holiday?(Mil - PG,SG)",82,Jrue Holiday?
-Paul George,96,,"Paul George?(LAC - SF,PF)",96,Paul George?
-Chris Paul,31,,Chris Paul?(Pho - PG),31,Chris Paul?
-Zion Williamson,76,,Zion Williamson?(NO - PF),76,Zion Williamson?
-Joel Embiid,140,,"Joel Embiid?(Phi - PF,C)",140,Joel Embiid?
-Jaylen Brown,36,,"Jaylen Brown?(Bos - SG,SF)",36,Jaylen Brown?
-Deandre Ayton,101,,Deandre Ayton?(Pho - C),101,Deandre Ayton?
-Kristaps Porzingis,20,,"Kristaps Porzingis?(Dal - PF,C)",20,Kristaps Porzingis?
-John Wall,62,,John Wall?(Hou - PG),62,John Wall?
-Kyle Lowry,70,,Kyle Lowry?(Tor - PG),70,Kyle Lowry?
-De'Aaron Fox,70,,De'Aaron Fox?(Sac - PG),70,De'Aaron Fox?
-Shai Gilgeous-Alexander,80,,"Shai Gilgeous-Alexander?(OKC - PG,SG,SF)",80,Shai Gilgeous-Alexander?
-DeMar DeRozan,66,,"DeMar DeRozan?(SA - SG,SF,PF)",66,DeMar DeRozan?
-Fred VanVleet,45,,"Fred VanVleet?(Tor - PG,SG)",45,Fred VanVleet?
-Pascal Siakam,90,,"Pascal Siakam?(Tor - PF,C)",90,Pascal Siakam?
-Jusuf Nurkic,35,,Jusuf Nurkic?(Por - C),35,Jusuf Nurkic?
-Jonas Valanciunas,41,,Jonas Valanciunas?(Mem - C),41,Jonas Valanciunas?
-CJ McCollum,38,,"CJ McCollum?(Por - PG,SG)",38,CJ McCollum?
-Lonzo Ball,37,,"Lonzo Ball?(NO - PG,SG)",37,Lonzo Ball?
-Andre Drummond,111,,Andre Drummond?(Cle - C),111,Andre Drummond?
-Khris Middleton,55,,"Khris Middleton?(Mil - SF,PF)",55,Khris Middleton?
-Mitchell Robinson,37,,Mitchell Robinson?(NY - C),37,Mitchell Robinson?
-Domantas Sabonis,90,,"Domantas Sabonis?(Ind - PF,C)",90,Domantas Sabonis?
-LaMarcus Aldridge,30,,"LaMarcus Aldridge?(SA - PF,C)",30,LaMarcus Aldridge?
-Robert Covington,24,,"Robert Covington?(Por - PF,C)",24,Robert Covington?
-Christian Wood,78,,"Christian Wood?(Hou - PF,C)",78,Christian Wood?
-Tobias Harris,40,,"Tobias Harris?(Phi - SF,PF)",40,Tobias Harris?
-Eric Bledsoe,27,,"Eric Bledsoe?(NO - PG,SG)",27,Eric Bledsoe?
-Hassan Whiteside,30,,"Hassan Whiteside?(Sac - PF,C)",30,Hassan Whiteside?
-Gordon Hayward,3,,"Gordon Hayward?(Cha - SG,SF)",3,Gordon Hayward?
-Malcolm Brogdon,38,,"Malcolm Brogdon?(Ind - PG,SG)",38,Malcolm Brogdon?
-Michael Porter Jr.,32,,"Michael Porter Jr.?(Den - SF,PF)",32,Michael Porter Jr.?
-Myles Turner,24,,"Myles Turner?(Ind - PF,C)",24,Myles Turner?
-Cody Zeller,3,,Cody Zeller?(Cha - C),3,Cody Zeller?
-Coby White,18,,"Coby White?(Chi - PG,SG)",18,Coby White?
-Mike Conley,3,,Mike Conley?(Uta - PG),3,Mike Conley?
-Kevin Love,30,,"Kevin Love?(Cle - PF,C)",30,Kevin Love?
-Steven Adams,21,,Steven Adams?(NO - C),21,Steven Adams?
-Clint Capela,32,,Clint Capela?(Atl - C),32,Clint Capela?
-Andrew Wiggins,35,,"Andrew Wiggins?(GS - SG,SF)",35,Andrew Wiggins?
-Buddy Hield,42,,"Buddy Hield?(Sac - SG,SF)",42,Buddy Hield?
-Devonte' Graham,49,,"Devonte' Graham?(Cha - PG,SG)",49,Devonte' Graham?
-Aaron Gordon,36,,"Aaron Gordon?(Orl - SF,PF)",36,Aaron Gordon?
-Wendell Carter Jr.,14,,Wendell Carter Jr.?(Chi - C),14,Wendell Carter Jr.?
-Montrezl Harrell,28,,"Montrezl Harrell?(LAL - PF,C)",28,Montrezl Harrell?
-Spencer Dinwiddie,13,,"Spencer Dinwiddie?(Bkn - PG,SG)",13,Spencer Dinwiddie?
-T.J. Warren,24,,"T.J. Warren?(Ind - SF,PF)",24,T.J. Warren?
-Julius Randle,46,,"Julius Randle?(NY - PF,C)",46,Julius Randle?
-Tyler Herro,21,,"Tyler Herro?(Mia - PG,SG,SF)",21,Tyler Herro?
-Klay Thompson,4,,"Klay Thompson?(GS - SG,SF)",4,Klay Thompson?
-Blake Griffin,18,,"Blake Griffin?(Bkn - PF,C)",18,Blake Griffin?
-Victor Oladipo,31,,"Victor Oladipo?(Hou - SG,SF)",31,Victor Oladipo?
-Jerami Grant,30,,"Jerami Grant?(Det - SF,PF)",30,Jerami Grant?
-Lauri Markkanen,25,,"Lauri Markkanen?(Chi - PF,C)",25,Lauri Markkanen?
-Danilo Gallinari,21,,"Danilo Gallinari?(Atl - SF,PF)",21,Danilo Gallinari?
-Kelly Oubre Jr.,26,,"Kelly Oubre Jr.?(GS - SG,SF,PF)",26,Kelly Oubre Jr.?
-Kemba Walker,7,,Kemba Walker?(Bos - PG),7,Kemba Walker?
-Dejounte Murray,35,,"Dejounte Murray?(SA - PG,SG)",35,Dejounte Murray?
-Brook Lopez,10,,Brook Lopez?(Mil - C),10,Brook Lopez?
-Tristan Thompson,19,,"Tristan Thompson?(Bos - PF,C)",19,Tristan Thompson?
-Thomas Bryant,18,,Thomas Bryant?(Was - C),18,Thomas Bryant?
-Markelle Fultz,32,,"Markelle Fultz?(Orl - PG,SG)",32,Markelle Fultz?
-Derrick White,3,,"Derrick White?(SA - PG,SG)",3,Derrick White?
-Marvin Bagley III,26,,"Marvin Bagley III?(Sac - PF,C)",26,Marvin Bagley III?
-Richaun Holmes,16,,"Richaun Holmes?(Sac - PF,C)",16,Richaun Holmes?
-Elfrid Payton,16,,Elfrid Payton?(NY - PG),16,Elfrid Payton?
-DeMarcus Cousins,10,,"DeMarcus Cousins?(Hou - PF,C)",10,DeMarcus Cousins?
-Al Horford,24,,"Al Horford?(OKC - PF,C)",24,Al Horford?
-Bogdan Bogdanovic,20,,"Bogdan Bogdanovic?(Atl - SG,SF,PF)",20,Bogdan Bogdanovic?
-OG Anunoby,8,,"OG Anunoby?(Tor - SF,PF)",8,OG Anunoby?
-LaMelo Ball,13,,"LaMelo Ball?(Cha - PG,SG)",13,LaMelo Ball?
-Marcus Smart,4,,"Marcus Smart?(Bos - PG,SG)",4,Marcus Smart?
-Mikal Bridges,5,,"Mikal Bridges?(Pho - SG,SF)",5,Mikal Bridges?
-Derrick Rose,4,,"Derrick Rose?(NY - PG,SG)",4,Derrick Rose?
-Brandon Clarke,7,,"Brandon Clarke?(Mem - SF,PF)",7,Brandon Clarke?
-Evan Fournier,9,,"Evan Fournier?(Orl - SG,SF)",9,Evan Fournier?
-Davis Bertans,8,,"Davis Bertans?(Was - PF,C)",8,Davis Bertans?
-Bojan Bogdanovic,6,,"Bojan Bogdanovic?(Uta - SF,PF)",6,Bojan Bogdanovic?
-Otto Porter Jr.,9,,"Otto Porter Jr.?(Chi - SF,PF)",9,Otto Porter Jr.?
-PJ Washington,7,,"PJ Washington?(Cha - SF,PF,C)",7,PJ Washington?
-Caris LeVert,6,,"Caris LeVert?(Ind - SG,SF)",6,Caris LeVert?
-De'Andre Hunter,5,,"De'Andre Hunter?(Atl - SF,PF)",5,De'Andre Hunter?
-Goran Dragic,4,,"Goran Dragic?(Mia - PG,SG)",4,Goran Dragic?
-James Wiseman,5,,James Wiseman?(GS - C),5,James Wiseman?
-Lou Williams,12,,"Lou Williams?(LAC - PG,SG)",12,Lou Williams?
-Carmelo Anthony,3,,"Carmelo Anthony?(Por - SF,PF)",3,Carmelo Anthony?
-Seth Curry,2,,"Seth Curry?(Phi - PG,SG)",2,Seth Curry?
-Harrison Barnes,3,,"Harrison Barnes?(Sac - SF,PF)",3,Harrison Barnes?
-Norman Powell,3,,"Norman Powell?(Tor - SG,SF)",3,Norman Powell?
-Kevin Huerter,2,,"Kevin Huerter?(Atl - SG,SF)",2,Kevin Huerter?
-Serge Ibaka,10,,"Serge Ibaka?(LAC - PF,C)",10,Serge Ibaka?
-Cole Anthony,1,,Cole Anthony?(Orl - PG),1,Cole Anthony?
-Derrick Favors,4,,"Derrick Favors?(Uta - PF,C)",4,Derrick Favors?
-Miles Bridges,2,,"Miles Bridges?(Cha - SF,PF)",2,Miles Bridges?
-Terry Rozier,5,,"Terry Rozier?(Cha - PG,SG)",5,Terry Rozier?
-DeAndre Jordan,3,,DeAndre Jordan?(Bkn - C),3,DeAndre Jordan?
-Dennis Schroder,5,,Dennis Schroder?(LAL - PG),5,Dennis Schroder?
-Anthony Edwards,3,,Anthony Edwards?(Min - SG),3,Anthony Edwards?
-RJ Barrett,7,,"RJ Barrett?(NY - SG,SF)",7,RJ Barrett?
-Donte DiVincenzo,2,,"Donte DiVincenzo?(Mil - PG,SG)",2,Donte DiVincenzo?
-Jarrett Allen,4,,Jarrett Allen?(Cle - C),4,Jarrett Allen?
-Daniel Theis,1,,Daniel Theis?(Bos - C),1,Daniel Theis?
-Darius Bazley,4,,"Darius Bazley?(OKC - SF,PF)",4,Darius Bazley?
-Nerlens Noel,2,,"Nerlens Noel?(NY - PF,C)",2,Nerlens Noel?
-Josh Richardson,3,,"Josh Richardson?(Dal - SG,SF)",3,Josh Richardson?
-Joe Ingles,2,,"Joe Ingles?(Uta - SG,SF)",2,Joe Ingles?
-Duncan Robinson,1,,"Duncan Robinson?(Mia - SG,SF)",1,Duncan Robinson?
-Will Barton,4,,"Will Barton?(Den - SG,SF)",4,Will Barton?
-Bobby Portis,1,,"Bobby Portis?(Mil - PF,C)",1,Bobby Portis?
-Marquese Chriss,1,,"Marquese Chriss?(GS - PF,C)",1,Marquese Chriss?
-Larry Nance Jr.,2,,"Larry Nance Jr.?(Cle - PF,C)",2,Larry Nance Jr.?
-Isaac Okoro,1,,"Isaac Okoro?(Cle - SG,SF)",1,Isaac Okoro?
-Jeff Teague,2,,"Jeff Teague?(Bos - PG,SG)",2,Jeff Teague?
-Darius Garland,4,,Darius Garland?(Cle - PG),4,Darius Garland?
-Dwight Powell,1,,"Dwight Powell?(Dal - PF,C)",1,Dwight Powell?
-Rui Hachimura,2,,"Rui Hachimura?(Was - SF,PF)",2,Rui Hachimura?
-Killian Hayes,1,,"Killian Hayes?(Det - PG,SG)",1,Killian Hayes?
-Obi Toppin,5,,"Obi Toppin?(NY - SF,PF)",5,Obi Toppin?
-Cam Reddish,1,,"Cam Reddish?(Atl - SG,SF,PF)",1,Cam Reddish?
-Chris Boucher,1,,"Chris Boucher?(Tor - PF,C)",1,Chris Boucher?
-Delon Wright,1,,"Delon Wright?(Det - PG,SG,SF)",1,Delon Wright?
-Paul Millsap,1,,"Paul Millsap?(Den - PF,C)",1,Paul Millsap?
-Joe Harris,1,,"Joe Harris?(Bkn - SG,SF)",1,Joe Harris?
-Malik Beasley,2,,"Malik Beasley?(Min - PG,SG)",2,Malik Beasley?
-Josh Jackson,1,,"Josh Jackson?(Det - SG,SF)",1,Josh Jackson?
-Jordan Clarkson,1,,"Jordan Clarkson?(Uta - PG,SG)",1,Jordan Clarkson?
-Tyrese Haliburton,1,,"Tyrese Haliburton?(Sac - PG,SG)",1,Tyrese Haliburton?
-Jakob Poeltl,1,,Jakob Poeltl?(SA - C),1,Jakob Poeltl?
-Marc Gasol,1,,Marc Gasol?(LAL - C),1,Marc Gasol?
-Jabari Parker,1,,"Jabari Parker?(Sac - SF,PF)",1,Jabari Parker?
-Terrence Ross,1,,"Terrence Ross?(Orl - SG,SF)",1,Terrence Ross?
-Deni Avdija,1,,"Deni Avdija?(Was - SG,SF)",1,Deni Avdija?
-Kevin Porter Jr.,1,,"Kevin Porter Jr.?(Hou - SG,SF)",1,Kevin Porter Jr.?
-Jaxson Hayes,1,,Jaxson Hayes?(NO - C),1,Jaxson Hayes?
-Tim Hardaway Jr.,1,,"Tim Hardaway Jr.?(Dal - SG,SF)",1,Tim Hardaway Jr.?
+Player,Price
+Anthony Davis,150
+James Harden,188
+Luka Doncic,216
+Trae Young,130
+LeBron James,
+Damian Lillard,
+Giannis Antetokounmpo,201
+Karl-Anthony Towns,159
+Bam Adebayo,92
+Ricky Rubio,
+Collin Sexton,
+Stephen Curry,160
+Jaren Jackson Jr.,46
+Jimmy Butler,106
+Jayson Tatum,121
+D'Angelo Russell,46
+Kevin Durant,185
+Nikola Jokic,225
+Kawhi Leonard,
+Nikola Vucevic,111
+Russell Westbrook,
+Devin Booker,74
+Brandon Ingram,73
+Ja Morant,69
+John Collins,58
+Zach LaVine,101
+Draymond Green,14
+Bradley Beal,
+Rudy Gobert,104
+Ben Simmons,
+Jamal Murray,72
+Kyrie Irving,25
+Donovan Mitchell,90
+Jrue Holiday,32
+Paul George,107
+Chris Paul,52
+Zion Williamson,
+Joel Embiid,125
+Jaylen Brown,
+Deandre Ayton,81
+Kristaps Porzingis,70
+John Wall,
+Kyle Lowry,24
+De'Aaron Fox,
+Shai Gilgeous-Alexander,
+DeMar DeRozan,54
+Fred VanVleet,65
+Pascal Siakam,31
+Jusuf Nurkic,
+Jonas Valanciunas,54
+CJ McCollum,54
+Lonzo Ball,
+Andre Drummond,7
+Khris Middleton,55
+Mitchell Robinson,
+Domantas Sabonis,132
+LaMarcus Aldridge,
+Robert Covington,
+Christian Wood,46
+Tobias Harris,45
+Eric Bledsoe,
+Hassan Whiteside,
+Gordon Hayward,
+Malcolm Brogdon,24
+Michael Porter Jr.,
+Myles Turner,61
+Cody Zeller,
+Coby White,
+Mike Conley,5
+Kevin Love,
+Steven Adams,5
+Clint Capela,60
+Andrew Wiggins,20
+Buddy Hield,36
+Devonte' Graham,5
+Aaron Gordon,
+Wendell Carter Jr.,
+Montrezl Harrell,
+Spencer Dinwiddie,13
+T.J. Warren,
+Julius Randle,119
+Tyler Herro,6
+Klay Thompson,
+Blake Griffin,
+Victor Oladipo,
+Jerami Grant,43
+Lauri Markkanen,
+Danilo Gallinari,
+Kelly Oubre Jr.,1
+Kemba Walker,
+Dejounte Murray,
+Brook Lopez,
+Tristan Thompson,
+Thomas Bryant,
+Markelle Fultz,
+Derrick White,23
+Marvin Bagley III,
+Richaun Holmes,
+Elfrid Payton,
+DeMarcus Cousins,
+Al Horford,1
+Bogdan Bogdanovic,3
+OG Anunoby,
+LaMelo Ball,73
+Marcus Smart,1
+Mikal Bridges,5
+Derrick Rose,
+Brandon Clarke,
+Evan Fournier,15
+Davis Bertans,
+Bojan Bogdanovic,5
+Otto Porter Jr.,
+PJ Washington,35
+Caris LeVert,11
+De'Andre Hunter,
+Goran Dragic,
+James Wiseman,
+Lou Williams,
+Carmelo Anthony,
+Seth Curry,
+Harrison Barnes,10
+Norman Powell,
+Kevin Huerter,
+Serge Ibaka,
+Cole Anthony,
+Derrick Favors,
+Miles Bridges,1
+Terry Rozier,23
+DeAndre Jordan,
+Dennis Schroder,16
+Anthony Edwards,35
+RJ Barrett,
+Donte DiVincenzo,
+Jarrett Allen,47
+Daniel Theis,
+Darius Bazley,
+Nerlens Noel,
+Josh Richardson,
+Joe Ingles,
+Duncan Robinson,
+Will Barton,
+Bobby Portis,2
+Marquese Chriss,
+Larry Nance Jr.,
+Isaac Okoro,
+Jeff Teague,
+Darius Garland,13
+Dwight Powell,
+Rui Hachimura,
+Killian Hayes,
+Obi Toppin,
+Cam Reddish,
+Chris Boucher,
+Delon Wright,
+Paul Millsap,
+Joe Harris,
+Malik Beasley,
+Josh Jackson,
+Jordan Clarkson,3
+Tyrese Haliburton,29
+Jakob Poeltl,20
+Marc Gasol,
+Jabari Parker,
+Terrence Ross,
+Deni Avdija,
+Kevin Porter Jr.,18
+Jaxson Hayes,
+Tim Hardaway Jr.,
+Jalen Green,26
+Keldon Johnson,32
+Jalen Suggs,5
+Mason Plumlee,4
+Isaiah Stewart,6
+Ivica Zubac,1
+Nicolas Claxton,1
+Jordan Poole,9
+Evan Mobley,4
+Mo Bamba,2
+Josh Giddey,1
+Alperen Sengun,6
+Cade Cunningham,21

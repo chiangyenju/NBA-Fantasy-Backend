@@ -11,8 +11,6 @@ Created on Thu Sep 17 08:15:08 2020
 import pandas as pd
 import time
 
-
-
 # parse data
 from nba_api.stats.static import players
 player_list = players.get_players()

@@ -41,7 +41,8 @@ season_index = [['2010-2011',dt.datetime(2010,10,26),dt.datetime(2011,4,13)],
                 ['2017-2018',dt.datetime(2017,10,18),dt.datetime(2018,4,12)],
                 ['2018-2019',dt.datetime(2018,10,16),dt.datetime(2019,4,10)],
                 ['2019-2020',dt.datetime(2019,10,22),dt.datetime(2020,8,14)],
-                ['2020-2021',dt.datetime(2020,12,22),dt.datetime(2021,5,16)]]
+                ['2020-2021',dt.datetime(2020,12,22),dt.datetime(2021,5,16)],
+                ['2021-2022',dt.datetime(2021,10,19),dt.datetime(2022,4,11)]]
                 # add new year index
       
 #season index to dataframe      
@@ -72,14 +73,14 @@ season_fp['pergfp'] = season_fp.fp / season_fp.games
 season_fp['pergfp'] = season_fp['pergfp'].round(1)
 
 #import yearly auction player price
-price_csv_y1 = pd.read_csv('draft_2020_2021_1.csv')
-price_csv_y2 = pd.read_csv('draft_2019_2020.csv')
-price_csv_y3 = pd.read_csv('draft_2018_2019.csv')
+price_csv_y1 = pd.read_csv('draft_2021_2022_1.csv')
+price_csv_y2 = pd.read_csv('draft_2020_2021_1.csv')
+price_csv_y3 = pd.read_csv('draft_2019_2020.csv')
 
 #merge vlookup price with season fp
-season_y1 = '2020-2021'
-season_y2 = '2019-2020'
-season_y3 = '2018-2019'
+season_y1 = '2021-2022'
+season_y2 = '2020-2021'
+season_y3 = '2019-2020'
 
 price_csv_y1['season'] = season_y1
 price_csv_y2['season'] = season_y2
