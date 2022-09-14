@@ -39,8 +39,9 @@ season_index = [['2010-2011',dt.datetime(2010,10,26),dt.datetime(2011,4,13)],
                 ['2015-2016',dt.datetime(2015,10,28),dt.datetime(2016,4,13)],
                 ['2016-2017',dt.datetime(2016,10,25),dt.datetime(2017,4,12)],
                 ['2017-2018',dt.datetime(2017,10,18),dt.datetime(2018,4,12)],
-                ['2018-2019',dt.datetime(2018,10,17),dt.datetime(2019,4,11)],
-                ['2019-2020',dt.datetime(2019,10,26),dt.datetime(2020,8,15)]]
+                ['2018-2019',dt.datetime(2018,10,16),dt.datetime(2019,4,10)],
+                ['2019-2020',dt.datetime(2019,10,22),dt.datetime(2020,8,14)],
+                ['2020-2021',dt.datetime(2020,12,22),dt.datetime(2021,5,16)]]
                 # add new year index
       
 #season index to dataframe      
@@ -70,15 +71,28 @@ season_fp = pd.pivot_table(df, index = ['name', 'season'], values = ['fp', 'game
 season_fp['pergfp'] = season_fp.fp / season_fp.games
 season_fp['pergfp'] = season_fp['pergfp'].round(1)
 
-#import auction player price
-price_csv = pd.read_csv('draft_2019_2020.csv')
+#import yearly auction player price
+price_csv_y1 = pd.read_csv('draft_2020_2021_1.csv')
+price_csv_y2 = pd.read_csv('draft_2019_2020.csv')
+price_csv_y3 = pd.read_csv('draft_2018_2019.csv')
 
 #merge vlookup price with season fp
-current_season = '2019-2020'
-price_csv['season'] = current_season
-price_csv = price_csv.rename(columns = {'Player': 'name', 'Price': 'price'})
+season_y1 = '2020-2021'
+season_y2 = '2019-2020'
+season_y3 = '2018-2019'
+
+price_csv_y1['season'] = season_y1
+price_csv_y2['season'] = season_y2
+price_csv_y3['season'] = season_y3
+
+price_csv_y1 = price_csv_y1.rename(columns = {'Player': 'name', 'Price': 'price'})
+price_csv_y2 = price_csv_y2.rename(columns = {'Player': 'name', 'Price': 'price'})
+price_csv_y3 = price_csv_y3.rename(columns = {'Player': 'name', 'Price': 'price'})
+
+price_csv = pd.concat([price_csv_y1,price_csv_y2,price_csv_y3])
 
 season_fp = season_fp.merge(price_csv, how='left', on=['name', 'season'])
+
 
 #fantasy points per dollar
 season_fp['fppd'] = season_fp.fp / season_fp.price
@@ -87,3 +101,5 @@ season_fp['fppd'] = season_fp['fppd'].round(1)
 season_fp.to_csv('season_fp.csv', index = False)
 
 df.to_csv('fantasy_raw.csv', index = False)
+
+

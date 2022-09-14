@@ -12,23 +12,12 @@ import pandas as pd
 import numpy as np
 import datetime as dt
 
-df = pd.read_csv('draft_2019_2020.csv')
-yearly_fp = pd.read_csv('season_fp.csv')
 
-current_season = '2019-2020'
+merge = pd.read_csv('season_fp.csv')
 
-df['season'] = current_season
-df = df.rename(columns = {'Player':'name'})
-
-merge = df.merge(yearly_fp, how='left', on=['name', 'season'])
-
-merge['fppd'] = merge.fp/merge.Price
+merge['fppd'] = merge.fp/merge.price
+merge['price'] = merge['price'].fillna(0)
 
 merge.to_csv('merge.csv', index = False)
 
-
-
-# df_fp_columns = ['Player','Price']
-# player1_fpoints = df.loc[df['Player'] == yearly_fp['name']][df_fp_columns]
-# player1_fpoints.columns = ['date','fp']
 
